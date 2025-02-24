@@ -1,0 +1,68 @@
+<HTML>
+	<BODY>
+		<p>
+			<video id="player" width="400" height="300" controls="" style="background:black;" src="https://github.com/jash-git/Generate-BAT-of-FFMPEG-video-segments-through-Copilot/raw/main/0001.mp4?raw=true">
+			</video>
+			
+			<br>
+			
+			<script>
+					var player = document.getElementById('player')
+					var string1="https://github.com/jash-git/NeZha2/raw/main/part/"
+					var string2="?raw=true"
+					var playlist = [
+						"part0000.mp4",
+						"part0001.mp4",
+						"part0002.mp4",
+						"part0003.mp4",
+						"part0004.mp4",
+						"part0005.mp4",
+						"part0006.mp4",
+						"part0007.mp4",
+						"part0008.mp4",
+						"part0009.mp4",
+						"part0010.mp4",
+						"part0011.mp4",
+						"part0012.mp4",
+						"part0013.mp4",
+						"part0014.mp4",
+						"part0015.mp4",
+						"part0016.mp4",
+						"part0017.mp4",
+						"part0018.mp4",
+						"part0019.mp4",
+						"part0020.mp4",
+						"part0021.mp4",
+						"part0022.mp4",
+						"part0023.mp4",
+						"part0024.mp4",
+						"part0025.mp4",
+						"part0026.mp4",
+						"part0027.mp4",
+						"part0028.mp4",
+						"part0029.mp4",
+						"part0030.mp4",
+						"part0031.mp4",
+						"part0032.mp4",
+						"part0033.mp4",
+						"part0034.mp4",
+					]
+					var activeVideo = 0
+					var fileurl = string1 + playlist[activeVideo]+ string2
+					player.src = fileurl
+					player.addEventListener('ended', function(e) {
+					  // update the new active video index
+					  activeVideo = (++activeVideo) % playlist.length
+					  var string1="https://github.com/jash-git/NeZha2/raw/main/part/"
+					  var string2="?raw=true"
+					  var fileurl = string1 + playlist[activeVideo]+ string2
+					  player.src = fileurl
+					  player.play()
+					})
+			</script>
+			
+			<br>
+			
+		</p>
+	</BODY>
+</HTML>
